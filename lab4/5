@@ -1,0 +1,28 @@
+#include <stdio.h> // ввод и вывод
+#include <stdlib.h> // для русского
+#include <math.h> // математика
+
+int main()
+{
+	float a, b, c, d, sum, raz, pr, chas;
+	system("chcp 1251");
+	system("cls");
+	printf("Эта программа ищет сумму, разность, произведение и частное модулей двух чисел \n");
+	printf("Число не должно быть равным нулю!\n");
+	printf("Введите число a = ");
+	scanf_s("%f", &a);
+	printf("Число не должно быть равным нулю!\n");
+	printf("Введите число b = ");
+	scanf_s("%f", &b);
+	c = fabs(a); //модуль вещественного числа
+	d = fabs(b);
+	sum = c + d;
+	raz = c - d;
+	pr = c * d;
+	chas = c / d;
+	printf("Сумма = %f\n", sum);
+	printf("Разность = %f\n", raz);
+	printf("Произведение = %f\n", pr);
+	printf("Частное = %f\n", chas);
+	return 0;
+}
