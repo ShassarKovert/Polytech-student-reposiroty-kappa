@@ -1,0 +1,17 @@
+#include <stdio.h> // ввод и вывод
+#include <stdlib.h> // для русского
+#include <math.h> // математика
+
+int main()
+{
+	float pi, d, L;
+	pi = 3.14;
+	system("chcp 1251");
+	system("cls");
+	printf("Эта программа считает длину окружности \n");
+	printf("Введите диаметр: ");
+	scanf_s("%f", &d);
+	L = pi * d;
+	printf("Длина окружности L = %f", L);
+	return 0;
+}
