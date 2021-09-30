@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float a, b, c, vsp, ac, bc, sum, pro;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 2-3\nЭта программа считает длинну отрезков АС, ВС и их сумму, а еще и произвдение\n");
+	printf("Введите координату A: ");
+	scanf_s("%f", &a);
+	printf("Введите координату B: ");
+	scanf_s("%f", &b);
+	printf("Введите координату C: ");
+	scanf_s("%f", &c);
+	if (a > b)
+	{
+		vsp = b;
+		b = a;
+		a = vsp;
+	}
+	else printf("А на своем месте! Молодец!\n");
+	if (b > c)
+	{
+		vsp = c;
+		c = b;
+		b = vsp;
+	}
+	else printf("В на своем месте! Отлично!\n");
+	if (c < a)
+	{
+		vsp = c;
+		c = a;
+		a = vsp;
+	}
+	else printf("С на своем месте! Классно!\n");
+	ac = c - a;
+	bc = c - b;
+	sum = ac + bc;
+	pro = ac * bc;
+	printf("АС = %f\nВС = %f\nИх сумма = %f\n Их произведение = %f", ac, bc, sum, pro);
+	return 0;
+}
