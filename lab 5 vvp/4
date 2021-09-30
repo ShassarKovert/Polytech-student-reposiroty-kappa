@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float xa, ya, xb, yb, s, p, ac, ad, vsp1, vsp2;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 4\nЭта программа считает площадь и периметр прямоугольника на координатной сетке\n");
+	printf("Введите первую координату первой точки: ");
+	scanf_s("%f", &xa);
+	printf("Введите вторую координату первой точки: ");
+	scanf_s("%f", &ya);
+	printf("Введите первую координату второй точки: ");
+	scanf_s("%f", &xb);
+	printf("Введите вторую координату второй точки: ");
+	scanf_s("%f", &yb);
+	if ((xa > xb) && (ya > yb))
+	{
+		vsp1 = xb;
+		xb = xa;
+		xa = vsp1;
+		vsp2 = yb;
+		yb = ya;
+		ya = vsp2;
+	}
+	else printf("Все стоит на своих местах! Отлично! \n");
+	ac = xb - xa;
+	ad = yb - ya;
+	p = 2 * (ac + ad);
+	s = ac * ad;
+	printf("Площадь = %f\nПериметр = %f", s, p);
+	return 0;
+}
