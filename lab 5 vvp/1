@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float xa, ya, xb, yb, a;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 1\nЭта программа считает расстояние между двумя точками\n");
+	printf("Введите координату x первой точки:");
+	scanf_s("%f", &xa);
+	printf("Введите координату y первой точки:");
+	scanf_s("%f", &ya);
+	printf("Введите координату x второй точки:");
+	scanf_s("%f", &xb);
+	printf("Введите координату y второй точки:");
+	scanf_s("%f", &yb);
+	a = sqrt((xa - xb)*(xa-xb) + (ya-yb)*(ya - yb));
+	printf("расстояние равно = %f", a);
+	return 0;
+}
