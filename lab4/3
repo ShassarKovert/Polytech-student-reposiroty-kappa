@@ -2,12 +2,12 @@
 #include <stdlib.h> // для русского
 #include <math.h> // математика
 
-int main()
+int main() // Блок 3
 {
 	float a, b, sr;
 	system("chcp 1251");
 	system("cls");
-	printf("Эта программа считает среднее арифметчиеское двух чисел \n");
+	printf("Блок 3\nЭта программа считает среднее арифметчиеское двух чисел \n");
 	printf("Введите число a = ");
 	scanf_s("%f", &a);
 	printf("Введите число b = ");
