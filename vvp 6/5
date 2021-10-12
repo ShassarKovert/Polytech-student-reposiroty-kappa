@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float y, x, vsp1, vsp2, vsp3;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 5\nЭта программа считает уравнение\n");
+	printf("Введите число икс: ");
+	scanf_s("%f", &x);
+	vsp3 = x - 3;
+	vsp1 = pow(vsp3, 6);
+	vsp2 = pow(vsp3, 3);
+	y = 4 * vsp1 - 7 * vsp2 + 2;
+	printf("В итоге игрек вот: %f", y);
+	return 0;
+}
