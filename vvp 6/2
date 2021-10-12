@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	int a, b, c, vsp;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 2\nЭта программа меняет местами значения переменных\n");
+	printf("Введите значение переменной А: ");
+	scanf_s("%d", &a);
+	printf("Введите значение переменной В: ");
+	scanf_s("%d", &b);
+	printf("Введите значение переменной С: ");
+	scanf_s("%d", &c);
+	vsp = a;
+	a = b;
+	b = c;
+	c = vsp;
+	printf("Новые значения поступили на базу!\nA = %d\nB = %d\nC = %d", a, b, c);
+	return 0;
+}
