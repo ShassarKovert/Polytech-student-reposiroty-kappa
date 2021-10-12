@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float a, vsp1, vsp2;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 7\nЭта программа находит значение числа в 15 степени\n");
+	printf("Введите число: ");
+	scanf_s("%f", &a);
+	vsp1 = pow(a, 5);
+	vsp2 = pow(a, 6);
+	a = vsp1 * vsp2 * a * a * a * a;
+	printf("%f - искомое число", a);
+	return 0;
+}
