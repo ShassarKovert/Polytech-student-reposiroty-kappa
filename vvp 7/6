@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include < stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float a1, b1, c1, a2, b2, c2, x, y, d, dy,dx;
+	printf("Блок 6\nПрограмма решает систему линейных уравнений\n");
+	printf("Введите первое значение А при икс: ");
+	scanf_s("%f", &a1);
+	printf("Введите первое значение В при игрек: ");
+	scanf_s("%f", &b1);
+	printf("Введите первое значение С: ");
+	scanf_s("%f", &c1);
+	printf("Введите второе значение А при икс: ");
+	scanf_s("%f", &a2);
+	printf("Введите второе значение В при игрек: ");
+	scanf_s("%f", &b2);
+	printf("Введите второе значение С: ");
+	scanf_s("%f", &c2);
+	d = a1 * b2 - b1 * a2;
+	dx = c1 * b2 - b1 * c2;
+	dy = a1 * c2 - c1 * a2;
+	x = dx / d;
+	y = dy / d;
+	printf("%f - это икс\n%f - это игрек", x, y);
+	return 0;
+}
