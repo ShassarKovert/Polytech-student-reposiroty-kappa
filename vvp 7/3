@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float akg, r1, yr, ykg, ar;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 3\nЭта программа делает что-то экономическое\n");
+	printf("Введите количество килограмм купленных конфет: ");
+	scanf_s("%f", &akg);
+	printf("Введите стоимость купленных конфет: ");
+	scanf_s("%f", &ar);
+	printf("Введите количество килограмм конфет для расчета их стоимости: ");
+	scanf_s("%f", &ykg);
+	r1 = ar / akg;
+	yr = r1 * ykg;
+	printf("%f рублей - один килограмм\n%f рублей - %f килограмм", r1, yr, ykg);
+	return 0;
+}
