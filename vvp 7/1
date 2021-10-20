@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	float pi = 3.14, a, b;
+	system("chcp 1251");
+	system("cls");
+	printf("Блок 1\nЭта программа переводит градусы в радианы\n");
+	printf("Введите градусное значение угла: ");
+	scanf_s("%f", &a);
+	if (a > 360)
+		a = a - 360;
+	b = (a * pi) / 180;
+	printf("%f радиан", b);
+	return 0;
+}
