@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include < stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float a, x, b, c;
+	printf("Блок 5\nЭтта программа решает линейное уравнение вида А*х + В = 0\n");
+	printf("Введите значение А: ");
+	scanf_s("%f", &a);
+	printf("Введите значение В: ");
+	scanf_s("%f", &b);
+	c = 0;
+	x = (c - b) / a;
+	printf("%f - ответ", x);
+	return 0;
+}
