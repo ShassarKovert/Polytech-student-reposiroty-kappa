@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float a, b, c;
+	printf("Блок 3\nЭта программа считает отрезки...\nВведите число А: ");
+	scanf_s("%f", &a);
+	printf("Введите число В: ");
+	scanf_s("%f", &b);
+	while (a > b)
+		a -= b;
+	printf("%f - вот столько не заняли", a);
+	return 0;
+}
