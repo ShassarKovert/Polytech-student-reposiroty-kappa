@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float a, b = 1024, c, d;
+	int e, g, h;
+	e = 0;
+	g = 0;
+	printf("Блок 1\n\Эта программа считает количество килобайт\n");
+	printf("Введите количество байт: ");
+	scanf_s("%f", &a);
+	c = a / b;
+	if ((int) a % (int)b != 0)
+		e= (int)c+1;
+	g = (int)c;
+	if (e == g)
+		printf("Вышло %d кб", g);
+	if (e > g)
+		printf("Получилось %d кб", e);
+	else
+		printf("Получается %d кб", g);
+	return 0;
+}
