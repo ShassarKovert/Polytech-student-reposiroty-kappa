@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int d, e, a;
+	printf("Блок 4\nЭта программа меняет местами цифры двузначного числа\nВведите число: ");
+	scanf_s("%d", &a);
+	d = a % 10;
+	e = a / 10;
+	printf("%d%d - классненько вышло, правда?", d, e);
+	return 0;
+}
