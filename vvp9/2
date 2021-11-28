@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, k;
+	printf("Блок 2\nЭта программа вычисляет номер дня недели некого года, год начинается с понедельника\nВведите номер дня: ");
+	scanf_s("%d", &k);
+	a = k%7;
+	printf("%d - номер дня недели, если воскресенье - 0", a);
+	return 0;
+}
