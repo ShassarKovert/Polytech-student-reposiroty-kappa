@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	long int n, a;
+	printf("Блок 1\nЭта программа считает количество секунд с конца последней минуты\nВведите количество секунд: ");
+	scanf_s("%d", &n);
+	a = n % 60;
+	printf("%d - столько секунд прошло с конца последней минуты", a);
+	return 0;
+}
