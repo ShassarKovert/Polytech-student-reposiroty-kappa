@@ -1,0 +1,15 @@
+nclude <stdlib.h>
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, b;
+	printf("Блок 5\nЭта программа считает номер столетия\nВведите номер года: ");
+	scanf_s("%d", &a);
+	b = ((a - 1) / 100) + 1;
+	printf("%d - вот такое столетие, красиво?", b);
+	return 0;
+}
