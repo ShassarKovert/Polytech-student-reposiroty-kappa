@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a;
+	printf("Блок 3\nЭта программа проверяет, является ли число четным и двузначным\nВведите целое положительное число: ");
+	scanf_s("%d", &a);
+	if (a % 2 == 0 && a / 10 < 10 && a>9)
+		printf("Число является четным двузначным");
+	else
+		printf("Число не является четным двузначным");
+	return 0;
+}
