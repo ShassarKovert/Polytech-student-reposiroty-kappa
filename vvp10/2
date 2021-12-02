@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float a, b, c;
+	printf("Блок 2\nЭта программа проверяет соответствие условию A < B < C\nВведите целое число А: ");
+	scanf_s("%f", &a);
+	printf("Введите целое число В: ");
+	scanf_s("%f", &b);
+	printf("Введите целое число С: ");
+	scanf_s("%f", &c);
+	if (a < b && b < c)
+		printf("Числа соответствуют условию");
+	else
+		printf("Числа не соответствуют условию");
+	return 0;
+}
