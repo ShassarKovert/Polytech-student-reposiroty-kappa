@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, b, c;
+	printf("Блок 7\nЭта программа проверяет, существует ли треугольник\nВведите наименьшее число/цифру: ");
+	scanf_s("%d", &a);
+	printf("Введите среднее число/цифру: ");
+	scanf_s("%d", &b);
+	printf("Введите наибольшее число/цифру: ");
+	scanf_s("%d", &c);
+	if (a + b > c)
+		printf("Существует");
+	else
+		printf("Не существует");
+	return 0;
+}
