@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, b, c, vspa, vspb, vspc;
+	printf("Блок 6\nЭто программа вычисляет, является ли треугольник прямоугольным\nВведите наименьшее число/цифру: ");
+	scanf_s("%d", &a);
+	printf("Введите среднее число/цифру: ");
+	scanf_s("%d", &b);
+	printf("Введите наибольшее число/цифру: ");
+	scanf_s("%d", &c);
+	if (sqrt(a * a + b * b) == c)
+		printf("Треугольник прямоугольный (ДА)");
+	else
+		printf("Треугольник не прямоугольный (НЕТ)");
+	return 0;
+}
