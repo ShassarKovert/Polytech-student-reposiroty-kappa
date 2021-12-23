@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float ax, ay, bx, by, cx, cy, d, e;
+	printf("Блок 3\nЭта программа определяет, какая из первых двух точек в пространстве ближе к третьей\nВведите координату х точки A: ");
+	scanf_s("%f", &ax);
+	printf("Введите значение у точки A: ");
+	scanf_s("%f", &ay);
+	printf("Введите значение х точки B: ");
+	scanf_s("%f", &bx);
+	printf("Введите значение у точки B: ");
+	scanf_s("%f", &by);
+	printf("Введите значение х точки C: ");
+	scanf_s("%f", &cx);
+	printf("Введите значение у точки C: ");
+	scanf_s("%f", &cy);
+	d = sqrtf(((bx - cx) * (bx - cx)) + ((by - cy) * (by - cy)));
+	e = sqrtf(((ax - cx) * (ax - cx)) + ((ay - cy) * (ay - cy)));
+	if (d > e)
+		printf("Точка В ближе к точке С, расстояние - %f ", d);
+	if (e > d)
+		printf("Точка А ближе к точке С, расстояние - %f", e);
+	else
+		printf("Точки находятся на равном расстоянии от точки С");
+	return 0;
+}
