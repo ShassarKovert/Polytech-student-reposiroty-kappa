@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int n;
+	char c;
+	printf("Блок 2\nЭто словно что-то из ОГЭ, тут у нас робот перемещается\nВведите исходное направление робота заглавной буквой: ");
+	scanf_s("%c", &c);
+	printf("Введите команду для робота: ");
+	scanf_s("%d", &n);
+	printf("НОВОЕ НАПРАВЛЕНИЕ: ");
+	switch (c)
+	{
+	case 'С':
+		switch (n) 
+		{
+			case 1:
+				printf("Запад");
+				break;
+			case 0:
+				printf("Север");
+				break;
+			case -1:
+				printf("Восток");
+				break;
+			default:
+				printf("Такого варианта нет");
+		}
+		break;
+	case 'В':
+		switch (n) 
+		{
+			case 1:
+				printf("Север");
+				break;
+			case 0:
+				printf("Восток");
+				break;
+			case -1:
+				printf("Юг");
+				break;
+			default:
+				printf("Такого варианта нет");
+		}
+		break;
+	case 'Ю':
+		switch (n) 
+		{
+			case 1:
+				printf("Восток");
+				break;
+			case 0:
+				printf("Юг");
+				break;
+			case -1:
+				printf("Запад");
+				break;
+			default:
+				printf("Такого варианта нет");
+		}
+		break;
+	case 'З':
+		switch (n) 
+		{
+			case 1:
+				printf("Юг");
+				break;
+			case 0:
+				printf("Запад");
+				break;
+			case -1:
+				printf("Север");
+				break;
+		default:
+				printf("Такого варианта нет");
+		}
+		break;
+	default:
+		printf("Такого варианта нет");
+	}
+	return 0;
+}
