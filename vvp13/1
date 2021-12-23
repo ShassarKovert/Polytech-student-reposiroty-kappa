@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    float c, m;
+    printf("Блок 1\nЭта программа выводит вес конфет от 100 грамм до 1 килограмма\nВведите цену 1 кг конфет: ");
+    scanf_s("%f", &c);
+    for (m = 0.1; m < 1.1; m += 0.1)
+        printf("%1.1f кг стоит %1.2f рублей\n ", m, c * m);
+    return 0;
+}
