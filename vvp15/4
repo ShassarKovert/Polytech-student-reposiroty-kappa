@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int quarter(float x, float y)
+{
+	if ((x > 0) && (y > 0))
+		return 1;
+	if ((x < 0) && (y > 0))
+		return 2;
+	if ((x < 0) && (y < 0))
+		return 3;
+	if ((x > 0) && (y < 0))
+		return 4;
+}
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int i;
+	float x, y;
+	printf("Блок 4\nЭта программа вычисляет координатную четверть трех точек\n\n");
+	for (i = 1; i <= 3; i++)
+	{
+		printf("Введите координату х: ");
+		scanf_s("%f", &x);
+		printf("Введите координату у: ");
+		scanf_s("%f", &y);
+		printf("Точка лежит в  %d четверти\n\n", quarter(x, y));
+	}
+	return 0;
+}
