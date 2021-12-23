@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float fact2(int n) 
+{
+    if ((n == 0) ||( n == 1))
+        return 1;
+    return n*fact2(n - 2);
+}
+
+int main()
+{
+    system("chcp 1251");
+	system("cls");
+    int i, n;
+    printf("Блок 5\nЭта программа вычисляет двойной факториал числа\n\n");
+    for (i = 1; i <= 5; i++) 
+    {
+        printf("Введите N: ");
+        scanf_s("%d", &n);
+        printf("Факториал равен: %1.0f\n\n", fact2(n));
+    }
+    return 0;
+}
