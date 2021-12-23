@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int n, f1 = 1, f2 = 1, f = 0, k = 2;
+    printf("Блок 6\nЭта программа определяет порядковый номер числа Фибоначчи\nВведите число: ");
+    scanf_s("%d", &n);
+    while (f < n) 
+    {
+        k++;
+        f = f2 + f1;
+        f2 = f1;
+        f1 = f;
+    }
+    printf("Порядковый номер числа %d равен %d\n", n, k);
+    return 0;
+}
