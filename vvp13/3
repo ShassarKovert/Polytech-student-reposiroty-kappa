@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int n, i, o = 0;
+    printf("Блок 3\nЭта программа выводит квадраты целых чисел до искомого\nВведите число: ");
+    scanf_s("%d", &n);
+    for (i = 1; i <= (2 * n - 1); i += 2) 
+    {
+        o += i;
+        printf("%d \n ", o);
+    }
+    return 0;
+}
