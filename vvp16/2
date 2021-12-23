@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#define na 100
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int d, n, i, pow, a[na];
+    printf("Блок 2\nЭта программа формирует первые N членов геометрической прогрессии вида A, A·D, A·D2 , A·D3...\nВведите количество членов прогрессии: ");
+    scanf_s("%d", &n);
+    printf("Введите число A данной прогрессии: ");
+    scanf_s("%d", &a[0]);
+    printf("Введите число D данной прогрессии: ");
+    scanf_s("%d", &d);
+    printf("\n");
+    pow = 1;
+    for (i = 1; i < n; i++) 
+    {
+        pow *= d;
+        a[i] = a[0] * pow;
+    }
+    for (i = 0; i < n; ++i) 
+        printf("%d: %d\n", i, a[i]);
+    return 0;
+}
