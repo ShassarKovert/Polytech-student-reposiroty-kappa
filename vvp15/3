@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float rings(float r1, float r2) 
+{
+    return 3.14 * (r1 * r1 - r2 * r2);
+}
+
+int main()
+{
+ system("chcp 1251");
+ system("cls");
+ int i;  
+ float r1, r2, vsp;
+ printf("Блок 3\nЭта программа находит площадь колец, заключенных между двумя окружностями с единым центром.\n\n");
+ for (i = 1; i <= 3; i++) 
+    {
+        printf("Введите радиус первой окружности: ");
+        scanf_s("%f", &r1);
+        printf("Введите радиус второй окружности: ");
+        scanf_s("%f", &r2);
+        if (r2 > r1)
+        {
+            vsp = r2;
+            r2 = r1;
+            r1 = vsp;
+        }
+        printf("Площадь кольца: %1.3f\n\n", rings(r1, r2));
+    }
+    return 0;
+}
