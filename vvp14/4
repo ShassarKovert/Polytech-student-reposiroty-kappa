@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    float p, s = 1000;
+    int k = 0;
+    printf("Блок 4\nЭта программа делает что-то очень экономическое\nВведите Р: ");
+    scanf_s("%f", &p); 
+    if ((p < 1) || (p > 24))
+        printf("Число Р какое-то не такое");
+    else
+    {
+        while (s <= 1100)
+        {
+            k++;
+            s += s * p / 100;
+        }
+        printf("Количество месяцев: %d\nИтоговый размер вклада: %1.2f\n", k, s);
+    }
+    return 0;
+}
