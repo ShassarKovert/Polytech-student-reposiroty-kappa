@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int a, b;
+    printf("Блок 5\nЭта программа находит НОД по алгоритму Евклида\nВведите число A: ");
+    scanf_s("%d", &a);
+    printf("Введите число B: ");
+    scanf_s("%d", &b);
+    while ((a != 0) && (b != 0)) 
+    {
+        if (a > b) 
+            a = a % b;
+        else 
+            b = b % a;
+    }
+    printf("НОД: %d \n", a + b);
+    return 0;
+}
