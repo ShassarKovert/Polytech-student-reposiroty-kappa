@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, b, d, c;
+	printf("Блок 2\nЭта программа находит сумму двух наибольших переменных\nВведите значение первой переменной: ");
+	scanf_s("%d", &a);
+	printf("Введите значение второй переменной: ");
+	scanf_s("%d", &b);
+	printf("Введите значение третьей переменной: ");
+	scanf_s("%d", &c);
+	if ((a < b) && (a < c))
+		d = b + c;
+	if ((b < a) && (b < c))
+		d = a + c;
+	if ((c < a) && (c < b))
+		d = a + b;
+	printf("%d - сумма переменных", d);
+	return 0;
+}
