@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int a, b, temp;
+    printf("Блок 2\nЭта программа находит незанятый участок на отрезке А\nВведите длину отрезка A: ");
+    scanf_s("%d", &a);
+    printf("Введите длину отрезка B: ");
+    scanf_s("%d", &b); 
+    temp = a;
+    while (temp >= 0) 
+    {
+        temp -= b;
+    }
+    printf("Не занято: %d\n ", temp + b);
+    return 0;
+}
