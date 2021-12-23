@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int n;
+	printf("Блок 5\nЭта программа определяет год по восточному календарю\nВведите интересующий вас год: ");
+	scanf_s("%d", &n);
+	printf("год ");
+	switch (n % 10)
+	{
+		case 0:
+		case 1:
+			printf("бел");
+			break;
+		case 2:
+		case 3:
+			printf("черн");
+			break;
+		case 4:
+		case 5:
+			printf("зелён");
+			break;
+		case 6:
+		case 7:
+			printf("красн");
+			break;
+		case 8:
+		case 9:
+			printf("жёлт");
+			break;
+	}
+	switch ((n + 8) % 12)
+	{
+		case 0:
+			printf("ой крысы");
+			break;
+		case 1:
+			printf("ой коровы");
+			break;
+		case 2:
+			printf("ого тигра");
+			break;
+		case 3:
+			printf("ого зайца");
+			break;
+		case 4:
+			printf("ого дракона");
+			break;
+		case 5:
+			printf("ой змеи");
+			break;
+		case 6:
+			printf("ой лошади");
+			break;
+		case 7:
+			printf("ой овцы");
+			break;
+		case 8:
+			printf("ой обезьяны");
+			break;
+		case 9:
+			printf("ой курицы");
+			break;
+		case 10:
+			printf("ой собаки");
+			break;
+		case 11:
+			printf("ой свиньи");
+			break;
+	}
+	return 0;
+}
