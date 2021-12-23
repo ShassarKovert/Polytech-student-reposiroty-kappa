@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    float a, a2 = 1, o = 1;
+    int n, i;
+    printf("Блок 4\nЭта программа делает что-то странное по формуле 1+А+А2+А3... И так далее\nВведите число А: ");
+    scanf_s("%f", &a);
+    printf("Введите степень числа, до которой суммируются: ");
+    scanf_s("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        a2 *= a;
+        o += a2;
+    }
+    printf("%f - вот такое число получилось \n", o);
+    return 0;
+}
