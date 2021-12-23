@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int a, b, i, i2;
+    printf("Блок 1\nЭта программа выводит числа от А до В, при этом каждое число выводится столько раз, чему оно само равно\nЧисло А должно быть меньше числа В\n\nВведите число A: ");
+    scanf_s("%d", &a);
+    printf("Введите число B:");
+    scanf_s("%d", &b);
+    if (b < a)
+        printf("Введены неправильные значения");
+    for (i = a; i <= b; ++i) 
+    {
+        for (i2 = 1; i2 <= i; ++i2) printf("%d ", i);
+        printf("\n");
+    }
+    return 0;
+}
