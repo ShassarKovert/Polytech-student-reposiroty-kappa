@@ -1,0 +1,179 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a;
+	printf("Блок 4\nЭта программа выводит описание числа в диапазоне от 100 до 999\nВведите число: ");
+	scanf_s("%d", &a);
+	if (a < 100)
+		printf("Слишком маленькое число ");
+	if ((a > 99) && (a < 121))
+	{
+		switch (a)
+		{
+		case 100:
+			printf("Сто");
+			break;
+		case 101:
+			printf("Сто один");
+			break;
+		case 102:
+			printf("Сто два");
+			break;
+		case 103:
+			printf("Сто три");
+			break;
+		case 104:
+			printf("Сто четыре");
+			break;
+		case 105:
+			printf("Сто пять");
+			break;
+		case 106:
+			printf("Сто шесть");
+			break;
+		case 107:
+			printf("Сто семь");
+			break;
+		case 108:
+			printf("Сто восемь");
+			break;
+		case 109:
+			printf("Сто девять");
+			break;
+		case 110:
+			printf("Сто десять");
+			break;
+		case 111:
+			printf("Сто одиннадцать");
+			break;
+		case 112:
+			printf("Сто двенадцать");
+			break;
+		case 113:
+			printf("Сто тринадцать");
+			break;
+		case 114:
+			printf("Сто четырнадцать");
+			break;
+		case 115:
+			printf("Сто пятнадцать");
+			break;
+		case 116:
+			printf("Сто шестнадцать");
+			break;
+		case 117:
+			printf("Сто семнадцать");
+			break;
+		case 118:
+			printf("Сто восемнадцать");
+			break;
+		case 119:
+			printf("Сто девятнадцать");
+			break;
+		case 120:
+			printf("Сто двадцать");
+			break;
+		}
+	}
+	if (a > 999)
+		printf("Слишком большое число");
+	if ((a > 120) && (a < 1000))
+	{
+		switch (a / 100)
+		{
+		case 1:
+			printf("Сто ");
+				break;
+		case 2:
+			printf("Двести ");
+				break;
+		case 3:
+			printf("Триста ");
+			break;
+		case 4:
+			printf("Четыреста ");
+			break;
+		case 5:
+			printf("Пятьсот ");
+			break;
+		case 6:
+			printf("Шестьсот ");
+			break;
+		case 7:
+			printf("Семьсот ");
+			break;
+		case 8:
+			printf("Восемьсот ");
+			break;
+		case 9:
+			printf("Девятьсот ");
+			break;
+		}
+		switch ((a / 10) % 10)
+		{
+		case 2:
+			printf("двадцать ");
+			break;
+		case 3:
+			printf("тридцать ");
+			break;
+		case 4:
+			printf("сорок ");
+			break;
+		case 5:
+			printf("пятьдесят ");
+			break;
+		case 6:
+			printf("шестьдесят ");
+			break;
+		case 7:
+			printf("семьдесят ");
+			break;
+		case 8:
+			printf("восемьдесят ");
+			break;
+		case 9:
+			printf("девяносто ");
+			break;
+		}
+		switch (a % 10)
+		{
+		case 0:
+			printf("");
+			break;
+		case 1:
+			printf("один");
+			break;
+		case 2:
+			printf("два");
+			break;
+		case 3:
+			printf("три");
+			break;
+		case 4:
+			printf("четыре");
+			break;
+		case 5:
+			printf("пять");
+			break;
+		case 6:
+			printf("шесть");
+			break;
+		case 7:
+			printf("семь");
+			break;
+		case 8:
+			printf("восемь");
+			break;
+		case 9:
+			printf("девять");
+			break;
+		}
+	}
+	return 0;
+}
