@@ -1,0 +1,25 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#define na 100 
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    int n, i, a[na];
+    printf("Блок 5\nЭта программа выводит введенный массив, сначала нечетные элементы в порядке возрстания, потом четные в порядке убывания\nВведите размер массива: ");
+    scanf_s("%d", &n);
+    printf("Введите элементы массива: \n");
+    for (i = 0; i < n; i++) 
+    {
+        printf("a[%d]: ", i + 1);
+        scanf_s("%d", &a[i]);
+    }
+    printf("Получается такой массив: \n");
+    for (i = 0; i < n; i += 2)             
+        printf("%d\n", a[i]);       
+    for (i = n - (n % 2) - 1; i >= 1; i -= 2)
+        printf("%d\n", a[i]);
+    return 0;
+}
