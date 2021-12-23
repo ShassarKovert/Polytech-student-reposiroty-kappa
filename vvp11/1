@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	int a, b, vsp, c;
+	printf("Блок 1\nЭта программа присваивает переменным большее значние, если они не равны, или делает их нулями\nВведите значение первой переменной: ");
+	scanf_s("%d", &a);
+	printf("Введите значение второй переменной: ");
+	scanf_s("%d", &b);
+	if (a != b)
+	{
+		if (a > b)
+			b = a;
+		else
+			a = b;
+	}
+	else
+	{
+		a = 0;
+		b = 0;
+	}
+	printf("Новые значения переменных:\nА = %d\nВ = %d", a, b);
+	return 0;
+}
