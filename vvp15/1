@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void PowerA3(float a, float* b)
+{
+    *b = a * a * a;
+}
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+    int i;
+    float a, b;
+    printf("Блок 1\nЭта программа последовательно возводит пять чисел в третью степень. \n");
+    for (i = 1; i <= 5; i++) 
+    {
+        printf("Введите число, возводимое в степень: ");
+        scanf_s("%f", &a);
+        PowerA3(a, &b);
+        printf("Число %1.3f в третьей степени равно %1.3f\n\n", a, b);
+    }
+	return 0;
+}
