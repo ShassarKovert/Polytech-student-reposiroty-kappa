@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+	system("chcp 1251");
+	system("cls");
+	float ax, ay;
+	printf("Блок 4\nЭта программа определяет номер координатной четверти, в которой лежит точка\nВведите координату х точки: ");
+	scanf_s("%f", &ax);
+	printf("Введите координату у точки: ");
+	scanf_s("%f", &ay);
+	if ((ax > 0) && (ay > 0))
+		printf("Точка лежит в 1 четверти");
+	if ((ax < 0) && (ay > 0))
+		printf("Точка лежит во 2 четверти");
+	if ((ax < 0) && (ay < 0))
+		printf("Точка лежит в 3 четверти");
+	if ((ax > 0) && (ay < 0))
+		printf("Точка лежит в 4 четверти");
+	return 0;
+}
